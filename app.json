@@ -1,0 +1,6 @@
+{
+  "name": "Ayax Admin Site",
+  "description": “Admin features for Ayax web site",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}
