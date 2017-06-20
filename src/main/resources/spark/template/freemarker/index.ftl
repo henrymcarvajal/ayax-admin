@@ -10,7 +10,7 @@
     </head>
     <body>
     <center>
-        <p><img src="img/ayax-logo.jpg" alt="Ayax" height="42" width="42"></p>
+        <p><img src="img/ayax-logo.jpg" alt="Ayax" height="150" width="150"></p>
         <form action="/acceso" method="post" name="signin-form" id="signin-form">
             Usuario:<br>
             <input type="text" name="username"><br>
