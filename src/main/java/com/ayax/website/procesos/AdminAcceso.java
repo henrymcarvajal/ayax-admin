@@ -18,7 +18,7 @@ import spark.Response;
 
 /**
  *
- * @author Mauris
+ * @author hmcarvajal@ayax.co
  */
 public class AdminAcceso {
 
@@ -27,8 +27,8 @@ public class AdminAcceso {
         respuesta.setRecurso("acceso");
         respuesta.setVerbo("POST");
 
-        String buzonElectronico = req.queryParams("email-address");
-        String contrasena = req.queryParams("password");
+        String buzonElectronico = req.queryParams("#username");
+        String contrasena = req.queryParams("#password");
 
         if ((buzonElectronico != null && !buzonElectronico.equals("")) && 
                 (contrasena != null && !contrasena.equals(""))) {
