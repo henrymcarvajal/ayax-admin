@@ -12,10 +12,10 @@
     <center>
         <p><img src="img/ayax-logo.jpg" alt="Ayax" height="150" width="170"></p>
         <form action="/acceso" method="post" name="signin-form" id="signin-form">
-            Usuario:<br>
-            <input type="text" name="username" required><br>
-            Contrase&ntilde;a:<br>
-            <input type="password" name="psw"v required><br><br>
+            Usuario:&nbsp;
+            <input type="text" name="#username" required><br>
+            Contrase&ntilde;a:&nbsp;
+            <input type="password" name="#password"v required><br><br>
             <input type="submit" value="Ingresar">  
         </form>
     </center>
