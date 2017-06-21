@@ -27,20 +27,20 @@ public class AdminAcceso {
         respuesta.setRecurso("acceso");
         respuesta.setVerbo("POST");
 
-        String buzonElectronico = req.queryParams("#username");
-        String contrasena = req.queryParams("#password");
+        String usuario = req.queryParams("#usuario");
+        String contrasena = req.queryParams("#contrasena");
 
-        if ((buzonElectronico != null && !buzonElectronico.equals("")) && 
+        if ((usuario != null && !usuario.equals("")) && 
                 (contrasena != null && !contrasena.equals(""))) {
 
-            buzonElectronico = buzonElectronico.toLowerCase();
+            usuario = usuario.toLowerCase();
 
-            String md5Contrasena = Cryptographer.md5Hash(contrasena, buzonElectronico);
+            String md5Contrasena = Cryptographer.md5Hash(contrasena, usuario);
 
             TransportadorJpaController pc = new TransportadorJpaController(EntityManagerFactoryBuilder.INSTANCE.build());
             EntityManager em = pc.getEntityManager();
-            Query q = em.createNamedQuery("Transportador.findByBuzonElectronicoYContrasena");
-            q.setParameter("buzonElectronico", buzonElectronico);
+            Query q = em.createNamedQuery("Transportador.findByUsuarioYContrasena");
+            q.setParameter("usuario", usuario);
             q.setParameter("contrasena", md5Contrasena);
 
             try {
