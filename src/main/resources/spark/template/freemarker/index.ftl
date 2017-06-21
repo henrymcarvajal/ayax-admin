@@ -12,8 +12,8 @@
     <center>
         <p><img src="img/ayax-logo.jpg" alt="Ayax" height="150" width="170"></p>
         <form action="/acceso" method="post" name="signin-form" id="signin-form">
-            <input type="text" name="#username" placeholder="Usuario" required><br>
-            <input type="password" name="#password" placeholder="Contrase&ntilde;a" required><br><br>
+            <input type="text" name="#usuario" placeholder="Usuario" required><br>
+            <input type="password" name="#contrasena" placeholder="Contrase&ntilde;a" required><br><br>
             <input type="submit" value="Ingresar">  
         </form>
     </center>
