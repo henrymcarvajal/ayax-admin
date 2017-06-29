@@ -12,3 +12,16 @@ div {
     text-align: center;
     width: 600px;
 }
+input[type=submit] {
+    background-color: #000080;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 7px 11px;
+    text-align: center;
+    text-decoration: none;
+}
